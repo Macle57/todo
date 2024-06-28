@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+}
+
+#root span {
+  color: white;
+}
+#root > span {
+  font-size: 5em;
+  line-height: 2.2em;
+  margin: 0.3em;
+}
+#root > img {
+  float: right;
+  margin: 1em;
+  height: 20em;
+}
+#root .todoWrapper {
+  padding-left: 1.3em;
+  margin-top: -2.3em;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+#root .todoWrapper span {
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  font-size: 3em;
+}
+#root .todoWrapper span img {
+  height: 0.5em;
+  margin-right: 0.3em;
+}
+#root .todoWrapper span input[type=checkbox] {
+  margin-left: 0.3em;
+  height: 0.5em;
+  width: 0.5em;
+}
+#root .todoWrapper .checkedClass {
+  color: gray;
+}
+#root .todoWrapper .checkedClass input[type=checkbox] {
+  background-color: gray;
+  accent-color: #20ff00;
+}
+#root .todoWrapper .checkedClass input[type=checkbox]:checked {
+  opacity: 50%;
+}
+#root .dropDelete {
+  z-index: 2;
+  cursor: default;
+  opacity: 40%;
+  transition: opacity 0.3s;
+  background-color: red;
+  border-radius: 50%;
+  padding: 0.2em;
+  font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+}
+#root .dropDelete:hover {
+  opacity: 100%;
+}
+#root form {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  display: flex;
+}
+#root form input {
+  width: 40vw;
+  padding: 0.6em;
+  background-color: black;
+  border: white solid medium;
+  color: white;
+}
+#root form button {
+  background-color: black;
+  border: blue thick solid;
+  padding: 0.4em;
+  color: white;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=index.css.map */
